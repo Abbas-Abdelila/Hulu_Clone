@@ -8,14 +8,14 @@ function Nav() {
     return (
         <nav className="relative">
             <div
-            className="last:pr-24 flex px-10 sm:20 whitespace-nowrap 
+            className=" flex px-10 sm:20 whitespace-nowrap 
             text-2xl space-x-10 sm:space-x-20 overflow-x-scroll
             scrollbar-hide">
                {Object.entries(requests).map(([key, {title, url}]) => 
                (<h2 
                     onClick={() => router.push(`/?genre=${key}`)}
                     key={key}
-                    className ="cursor-pointer transition duration-100
+                    className ="last:pr-24 cursor-pointer transition duration-100
                     transform hover:scale-125 hover:text-white
                     active:text-red-300 "
                     >
